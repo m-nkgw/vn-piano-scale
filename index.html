@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Violin Piano Chord Scale</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimal-ui">
+  <!-- <meta name=" viewport" content=" width=580px"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="key2.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <script src="key2.js"></script>
+  <!--
+  <script id="panel-init">
+    $(function() {
+    			$( "body>[data-role='panel']" ).panel();
+    		});
+  </script>
+  -->
+</head>
+
+<body>
+
+  <div data-role="page" id="demo-page2" data-url="demo-page2">
+    <div data-role="header">
+      <h1>Vn. Scale Chord</h1>
+      <a href="#left-panel2" data-icon="bars" data-iconpos="notext">Menu</a>
+
+
+    </div>
+    <!-- /header -->
+    <div data-role="content">
+      <div class="article">
+        <div>
+          <div id="violin">
+            <div class="num-string thumb-pos-num thumb-num-open">Open</div>
+            <div class="num-string thumb-pos-num thumb-num-low1">
+              <!--<small>Low</small>1--></div>
+            <div class="num-string thumb-pos-num thumb-num-1">1</div>
+            <div class="num-string thumb-pos-num thumb-num-low2">
+              <!--<small>Low</small>2--></div>
+            <div class="num-string thumb-pos-num thumb-num-2">2</div>
+            <div class="num-string thumb-pos-num thumb-num-3">3</div>
+            <div class="num-string thumb-pos-num thumb-num-high3">
+              <!--<small>H</small>3
+              <small>/L</small>4--></div>
+            <div class="num-string thumb-pos-num thumb-num-4">4</div>
+
+            <div class="num-string-3rd thumb-pos-num thumb-num-open"></div>
+            <div class="num-string-3rd thumb-pos-num thumb-num-low1"></div>
+            <div class="num-string-3rd thumb-pos-num thumb-num-1"></div>
+            <div class="num-string-3rd thumb-pos-num thumb-num-low2"></div>
+            <div class="num-string-3rd thumb-pos-num thumb-num-2"></div>
+            <div class="num-string-3rd thumb-pos-num thumb-num-3"><!--<small>Low</small>1--></div>
+            <div class="num-string-3rd thumb-pos-num thumb-num-high3">1</div>
+            <div class="num-string-3rd thumb-pos-num thumb-num-4"><!-- <small>Low</small>2--></div>
+            <div class="num-string-3rd thumb-pos-num thumb-num-3-2">2</div>
+            <div class="num-string-3rd thumb-pos-num thumb-num-3-3">3</div>
+            <div class="num-string-3rd thumb-pos-num thumb-num-3-high3"><!--<small>H</small>3
+              <small>/L</small>4--></div>
+            <div class="num-string-3rd thumb-pos-num thumb-num-3-4">4</div>
+
+            <div class="fret-open ui-shadow"></div>
+
+            <div class="fret">
+              <div class="fret-3rd ui-shadow"></div>
+              <div class="fret-1st ui-shadow"></div>
+
+              <div class="five-strings">
+                <div class="vstrings c-string ui-shadow"></div>
+                <div data-note="vnC3" class="vnC3 c-string thumb-pos thumb-num-open ui-shadow">
+                  <div>C</div>
+                </div>
+                <div data-note="vnDb3" class="vnDb3 c-string thumb-pos thumb-num-low1 ui-shadow">D
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnD3" class="vnD3 c-string thumb-pos thumb-num-1 ui-shadow">D</div>
+                <div data-note="vnEb3" class="vnEb3 c-string thumb-pos thumb-num-low2 ui-shadow">E
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnE3" class="vnE3 c-string thumb-pos thumb-num-2 ui-shadow">E</div>
+                <div data-note="vnF3" class="vnF3 c-string thumb-pos thumb-num-3 ui-shadow">F</div>
+                <div data-note="vnGb3" class="vnGb3 c-string thumb-pos thumb-num-high3 ui-shadow">G
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnG3" class="vnG3 g-string thumb-pos thumb-num-4 ui-shadow">G</div>
+                <div data-note="vnAb3" class="vnAb3 g-string thumb-pos thumb-num-3-2 ui-shadow">A
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnA3" class="vnA3 g-string thumb-pos thumb-num-3-3 ui-shadow">A</div>
+                <div data-note="vnBb3" class="vnBb3 g-string thumb-pos thumb-num-3-high3 ui-shadow">B<sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnB3" class="vnB3 g-string thumb-pos thumb-num-3-4 ui-shadow">B
+                </div>
+              </div>
+              
+              <div class="four-strings">
+                <div class="vstrings g-string ui-shadow"></div>
+                <div class="vstrings d-string ui-shadow"></div>
+                <div class="vstrings a-string ui-shadow"></div>
+                <div class="vstrings e-string ui-shadow"></div>
+
+                <div data-note="vnG3" class="vnG3 g-string thumb-pos thumb-num-open ui-shadow">
+                  <div>G</div>
+                </div>
+                <div data-note="vnAb3" class="vnAb3 g-string thumb-pos thumb-num-low1 ui-shadow">A
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnA3" class="vnA3 g-string thumb-pos thumb-num-1 ui-shadow">A</div>
+                <div data-note="vnBb3" class="vnBb3 g-string thumb-pos thumb-num-low2 ui-shadow">B
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnB3" class="vnB3 g-string thumb-pos thumb-num-2 ui-shadow">B</div>
+                <div data-note="vnC4" class="vnC4 g-string thumb-pos thumb-num-3 ui-shadow">C</div>
+                <div data-note="vnDb4" class="vnDb4 g-string thumb-pos thumb-num-high3 ui-shadow">D
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnD4" class="vnD4 g-string thumb-pos thumb-num-4 ui-shadow">D</div>
+
+                <div data-note="vnD4" class="vnD4 d-string thumb-pos thumb-num-open ui-shadow">D</div>
+                <div data-note="vnEb4" class="vnEb4 d-string thumb-pos thumb-num-low1 ui-shadow">E
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnE4" class="vnE4 d-string thumb-pos thumb-num-1 ui-shadow">E</div>
+                <div data-note="vnF4" class="vnF4 d-string thumb-pos thumb-num-low2 ui-shadow">F</div>
+                <div data-note="vnGb4" class="vnGb4 d-string thumb-pos thumb-num-2 ui-shadow">G
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnG4" class="vnG4 d-string thumb-pos thumb-num-3 ui-shadow">G</div>
+                <div data-note="vnAb4" class="vnAb4 d-string thumb-pos thumb-num-high3 ui-shadow">A
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnA4" class="vnA4 d-string thumb-pos thumb-num-4 ui-shadow">A</div>
+
+                <div data-note="vnA4" class="vnA4 a-string thumb-pos thumb-num-open ui-shadow">A</div>
+                <div data-note="vnBb4" class="vnBb4 a-string thumb-pos thumb-num-low1 ui-shadow">B
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnB4" class="vnB4 a-string thumb-pos thumb-num-1  ui-shadow">B</div>
+                <div data-note="vnC5" class="vnC5 a-string thumb-pos thumb-num-low2 ui-shadow">C</div>
+                <div data-note="vnDb5" class="vnDb5 a-string thumb-pos thumb-num-2 ui-shadow">D
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnD5" class="vnD5 a-string thumb-pos thumb-num-3 ui-shadow">D</div>
+                <div data-note="vnEb5" class="vnEb5 a-string thumb-pos thumb-num-high3 ui-shadow">E
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnE5" class="vnE5 a-string thumb-pos thumb-num-4 ui-shadow">E</div>
+
+                <div data-note="vnE5" class="vnE5 e-string thumb-pos thumb-num-open ui-shadow">E</div>
+                <div data-note="vnF5" class="vnF5 e-string thumb-pos thumb-num-low1 ui-shadow">F</div>
+                <div data-note="vnGb5" class="vnGb5 e-string thumb-pos thumb-num-1 ui-shadow">G
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnG5" class="vnG5 e-string thumb-pos thumb-num-low2 ui-shadow">G</div>
+                <div data-note="vnAb5" class="vnAb5 e-string thumb-pos thumb-num-2 ui-shadow">A
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnA5" class="vnA5 e-string thumb-pos thumb-num-3 ui-shadow">A</div>
+                <div data-note="vnBb5" class="vnBb5 e-string thumb-pos thumb-num-high3 ui-shadow">B
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnB5" class="vnB5 e-string thumb-pos thumb-num-4 ui-shadow">B</div>
+
+                <!-- 3rd -->
+                <div data-note="vnEb4" class="vnEb4 g-string thumb-pos thumb-num-3-2 ui-shadow">E
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnE4" class="vnE4 g-string thumb-pos thumb-num-3-3 ui-shadow">E</div>
+                <div data-note="vnF4" class="vnF4 g-string thumb-pos thumb-num-3-high3 ui-shadow">F</div>
+                <div data-note="vnGb4" class="vnGb4 g-string thumb-pos thumb-num-3-4 ui-shadow">G
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnBb4" class="vnBb4 d-string thumb-pos thumb-num-3-2 ui-shadow">B
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnB4" class="vnB4 d-string thumb-pos thumb-num-3-3  ui-shadow">B</div>
+                <div data-note="vnC5" class="vnC5 d-string thumb-pos thumb-num-3-high3 ui-shadow">C</div>
+                <div data-note="vnDb5" class="vnDb5 d-string thumb-pos thumb-num-3-4 ui-shadow">D
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnF5" class="vnF5 a-string thumb-pos thumb-num-3-2 ui-shadow">F</div>
+                <div data-note="vnGb5" class="vnGb5 a-string thumb-pos thumb-num-3-3 ui-shadow">G
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnG5" class="vnG5 a-string thumb-pos thumb-num-3-high3 ui-shadow">G</div>
+                <div data-note="vnAb5" class="vnAb5 a-string thumb-pos thumb-num-3-4 ui-shadow">A
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnC5" class="vnC5 e-string thumb-pos thumb-num-3-2 ui-shadow">C</div>
+                <div data-note="vnDb5" class="vnDb5 e-string thumb-pos thumb-num-3-3 ui-shadow">D
+                  <sup>&#X266D;</sup>
+                </div>
+                <div data-note="vnD5" class="vnD5 e-string thumb-pos thumb-num-3-high3 ui-shadow">D</div>
+                <div data-note="vnEb5" class="vnEb5 e-string thumb-pos thumb-num-3-4 ui-shadow">E
+                  <sup>&#X266D;</sup>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <fieldset data-role="controlgroup" data-mini="true">
+            <!--
+          <fieldset data-role="controlgroup">
+-->
+            <div class="ui-grid-b ui-responsive">
+              <legend id="discription2">Select Chord or Scale...</legend>
+              <div class="ui-block-a">
+                <select name="select-choice-vn1" id="select-choice-vn1">
+                  <option value="">Common Chord...</option>
+                  <optgroup label="Traiad">
+                    <option value="maj">Majar Triad</option>
+                    <option value="min">[ m ] Minor Triad</option>
+                  </optgroup>
+                  <optgroup label="Seventh">
+                    <option value="dom7">[ 7 ] Dominant 7th</option>
+                    <option value="maj7">[ M7 ] Majar 7th</option>
+                    <option value="min7">[ m7 ] Minor 7th</option>
+                  </optgroup>
+                  <optgroup label="Diminished">
+                    <option value="dim">[ dim ] Diminished Triad</option>
+                    <option value="dim7">[ dim7 ] Diminited 7th</option>
+                    <option value="halfDim">[ m7(b5) ] Half-diminished 7th</option>
+                  </optgroup>
+                  <optgroup label="Augemented">
+                    <option value="arg">[ aug ] Augemented Triad</option>
+                    <option value="arg7">[ aug7 ] Augemented 7th</option>
+                  </optgroup>
+                  <optgroup label="Suspended 4th">
+                    <option value="sus4">[ sus4 ] Suspended 4th</option>
+                    <option value="s7sus4">[ 7sus4 ] 7th Suspended 4th</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="ui-block-b">
+                <select name="select-choice-vn2" id="select-choice-vn2">
+                  <option value="">Tension Chord...</option>
+                  <optgroup label="Traiad">
+                    <option value="maj6_jazz">[ 6 ] Majar 6th</option>
+                    <option value="min6_jazz">[ m6 ] Minor 6th</option>
+                  </optgroup>
+                  <optgroup label="Seventh">
+                    <option value="dom7_jazz">[ 7 ] Dominant 7th - 9th</option>
+                    <option value="dom7_jazz13">[ 7 ] Dominant 7th - 13th</option>
+                    <option value="maj7_jazz">[ M7 ] Majar 7th</option>
+                    <option value="maj7_jazz2">[ M7 ] Majar 7th - 2</option>
+                    <option value="min7_jazz">[ m7 ] Minor 7th</option>
+                    <option value="min7_jazz2">[ m7 ] Minor 7th - 2</option>
+                  </optgroup>
+                  <optgroup label="Diminished">
+                    <option value="dim_jazz">[ dim ] Diminished Triad</option>
+                    <option value="halfDim_jazz">[ m7(b5) ] Half-diminished 7th</option>
+                  </optgroup>
+                  <optgroup label="Augemented">
+                    <option value="arg7_jazz">[ aug7 ] Augemented 7th</option>
+                  </optgroup>
+                  <optgroup label="Suspended 4th">
+                    <option value="s7sus4_jazz">[ 7sus4 ] 7th Suspended 4th</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="ui-block-c">
+                <select name="select-choice-vn3" id="select-choice-vn3">
+                  <option value="">Scale...</option>
+                  <option value="scale_ionian">Ionian</option>
+                  <option value="scale_dorian">Dorian</option>
+                  <option value="scale_phrigian">Phrigian</option>
+                  <option value="scale_lydian">Lydian</option>
+                  <option value="scale_mixolydian">Mixolydian</option>
+                  <option value="scale_aeolian">Aeolian (Natural Minor)</option>
+                  <option value="scale_melodicminor">Melodic minor</option>
+                  <option value="scale_altered">Altered</option>
+                  <option value="scale_dombebopasc">Dominant bebop (asc)</option>
+                  <option value="scale_dombebopdesc">Dominant bebop (desc)</option>
+                  <option value="scale_majorbebop">Major bebop</option>
+                  <option value="scale_wholetone">Whole tone</option>
+                  <option value="scale_comdim">Com. Dim</option>
+                  <option value="scale_chromatic">Chromatic</option>
+                  <option value="scale_majorpentatonic">Major pentatonic</option>
+                  <option value="scale_minorpentatonic">Minor pentatonic</option>
+                  <option value="scale_blues">Blues</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <!-- /article -->
+    </div>
+    <!-- /content -->
+    <div data-role="panel" id="left-panel2" data-display="overlay" data-position="left">
+      <ul data-role="listview" data-icon="false">
+        <li data-icon="delete">
+          <a href="#" data-rel="close">Close</a>
+        </li>
+        <li>
+          <a href="#demo-page">Piano</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /panel -->
+  </div>
+  <!-- /page -->
+
+  <div data-role="page" id="demo-page" data-url="demo-page">
+    <div data-role="header">
+      <h1>Piano Scale Chord</h1>
+      <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+    </div>
+    <!-- /header -->
+    <div data-role="content">
+      <div class="article">
+        <div>
+          <div id="keyboard">
+            <div class="ui-grid-a ui-responsive">
+              <div class="keyboard1 ui-block-a">
+                <!--
+              <div id="A2">A</div>
+              <div id="B2">B</div>
+              <div id="Ab2">A
+                <sup>&#X266D;</sup>
+              </div>
+              <div id="Bb2">B
+                <sup>&#X266D;</sup>
+              </div>
+              -->
+                <div id="C3">C</div>
+                <div id="D3">D</div>
+                <div id="E3">E</div>
+                <div id="F3">F</div>
+                <div id="G3">G</div>
+                <div id="A3">A</div>
+                <div id="B3">B</div>
+                <div id="Db3">D
+                  <sup>&#X266D;</sup>
+                </div>
+                <div id="Eb3">E
+                  <sup>&#X266D;</sup>
+                </div>
+                <div id="Gb3">G
+                  <sup>&#X266D;</sup>
+                </div>
+                <div id="Ab3">A
+                  <sup>&#X266D;</sup>
+                </div>
+                <div id="Bb3">B
+                  <sup>&#X266D;</sup>
+                </div>
+              </div>
+              <div class="keyboard1 keyboard2 ui-block-b">
+                <div id="C4">C</div>
+                <div id="D4">D</div>
+                <div id="E4">E</div>
+                <div id="F4">F</div>
+                <div id="G4">G</div>
+                <div id="A4">A</div>
+                <div id="B4">B</div>
+                <!-- <div id="C5">C</div> -->
+                <div id="Db4">D
+                  <sup>&#X266D;</sup>
+                </div>
+                <div id="Eb4">E
+                  <sup>&#X266D;</sup>
+                </div>
+                <div id="Gb4">G
+                  <sup>&#X266D;</sup>
+                </div>
+                <div id="Ab4">A
+                  <sup>&#X266D;</sup>
+                </div>
+                <div id="Bb4">B
+                  <sup>&#X266D;</sup>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <fieldset data-role="controlgroup" data-mini="true">
+            <!--
+          <fieldset data-role="controlgroup">
+-->
+            <div class="ui-grid-b ui-responsive">
+              <legend id="discription">Select Chord or Scale...</legend>
+              <div class="ui-block-a">
+                <select name="select-choice-1" id="select-choice-1">
+                  <option value="">Common Chord...</option>
+                  <optgroup label="Traiad">
+                    <option value="maj">Majar Triad</option>
+                    <option value="min">[ m ] Minor Triad</option>
+                  </optgroup>
+                  <optgroup label="Seventh">
+                    <option value="dom7">[ 7 ] Dominant 7th</option>
+                    <option value="maj7">[ M7 ] Majar 7th</option>
+                    <option value="min7">[ m7 ] Minor 7th</option>
+                  </optgroup>
+                  <optgroup label="Diminished">
+                    <option value="dim">[ dim ] Diminished Triad</option>
+                    <option value="dim7">[ dim7 ] Diminited 7th</option>
+                    <option value="halfDim">[ m7(b5) ] Half-diminished 7th</option>
+                  </optgroup>
+                  <optgroup label="Augemented">
+                    <option value="arg">[ aug ] Augemented Triad</option>
+                    <option value="arg7">[ aug7 ] Augemented 7th</option>
+                  </optgroup>
+                  <optgroup label="Suspended 4th">
+                    <option value="sus4">[ sus4 ] Suspended 4th</option>
+                    <option value="s7sus4">[ 7sus4 ] 7th Suspended 4th</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="ui-block-b">
+                <select name="select-choice-2" id="select-choice-2">
+                  <option value="">Tension Chord...</option>
+                  <optgroup label="Traiad">
+                    <option value="maj6_jazz">[ 6 ] Majar 6th</option>
+                    <option value="min6_jazz">[ m6 ] Minor 6th</option>
+                  </optgroup>
+                  <optgroup label="Seventh">
+                    <option value="dom7_jazz">[ 7 ] Dominant 7th - 9th</option>
+                    <option value="dom7_jazz13">[ 7 ] Dominant 7th - 13th</option>
+                    <option value="maj7_jazz">[ M7 ] Majar 7th</option>
+                    <option value="maj7_jazz2">[ M7 ] Majar 7th - 2</option>
+                    <option value="min7_jazz">[ m7 ] Minor 7th</option>
+                    <option value="min7_jazz2">[ m7 ] Minor 7th - 2</option>
+                  </optgroup>
+                  <optgroup label="Diminished">
+                    <option value="dim_jazz">[ dim ] Diminished Triad</option>
+                    <option value="halfDim_jazz">[ m7(b5) ] Half-diminished 7th</option>
+                  </optgroup>
+                  <optgroup label="Augemented">
+                    <option value="arg7_jazz">[ aug7 ] Augemented 7th</option>
+                  </optgroup>
+                  <optgroup label="Suspended 4th">
+                    <option value="s7sus4_jazz">[ 7sus4 ] 7th Suspended 4th</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="ui-block-c">
+                <select name="select-choice-3" id="select-choice-3">
+                  <option value="">Scale...</option>
+                  <option value="scale_ionian">Ionian</option>
+                  <option value="scale_dorian">Dorian</option>
+                  <option value="scale_phrigian">Phrigian</option>
+                  <option value="scale_lydian">Lydian</option>
+                  <option value="scale_mixolydian">Mixolydian</option>
+                  <option value="scale_aeolian">Aeolian (Natural Minor)</option>
+                  <option value="scale_melodicminor">Melodic minor</option>
+                  <option value="scale_altered">Altered</option>
+                  <option value="scale_dombebopasc">Dominant bebop (asc)</option>
+                  <option value="scale_dombebopdesc">Dominant bebop (desc)</option>
+                  <option value="scale_majorbebop">Major bebop</option>
+                  <option value="scale_wholetone">Whole tone</option>
+                  <option value="scale_comdim">Com. Dim</option>
+                  <option value="scale_chromatic">Chromatic</option>
+                  <option value="scale_majorpentatonic">Major pentatonic</option>
+                  <option value="scale_minorpentatonic">Minor pentatonic</option>
+                  <option value="scale_blues">Blues</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <!-- /article -->
+    </div>
+    <!-- /content -->
+    <div data-role="panel" id="left-panel" data-display="overlay" data-position="left">
+      <ul data-role="listview" data-icon="false">
+        <li data-icon="delete">
+          <a href="#" data-rel="close">Close</a>
+        </li>
+        <li>
+          <a href="#demo-page2">Violin</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /panel -->
+  </div>
+</body>
+<!-- /page -->
+
+</html>
+
